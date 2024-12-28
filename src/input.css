@@ -17,4 +17,11 @@
     font-display: swap;
     src: url(../fonts/Gilroy-Medium.woff2) format("woff2");
   }
+  
+}
+
+@layer utilities{
+  .container {
+    @apply mx-auto max-w-[946px];
+  }
 }

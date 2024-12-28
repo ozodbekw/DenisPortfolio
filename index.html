@@ -5,46 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Denis Novik | Portfolio</title>
 
-    <!-- Fav Icon -->
-    <link
-      rel="icon"
-      type="image/png"
-      href="./favicon-96x96.png"
-      sizes="96x96"
-    />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <link rel="shortcut icon" href="./favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./apple-touch-icon.png"
-    />
-    <link rel="manifest" href="./site.webmanifest" />
-
     <!-- Styles -->
     <link href="./src/output.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header  -->
-    <header class="header font-gilroy container mx-10  items-center">
-      <div class="header-container container">
-        <nav class="nav">
-          <ul class="continer text-green-300 text-4xl flex">
-            <li class="list-item"><a href="#">List</a></li>
-            <li class="list-item"><a href="#">List</a></li>
-            <li class="list-item"><a href="#">List</a></li>
-            <li class="list-item"><a href="#">List</a></li>
-            <li class="list-item text-green-300">
-              <a class="font-gilroy text-green-300" href="#">List</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <header class="header my-8 container font-gilroy items-center">
+      <nav class="nav mb-8">
+        <ul class="text-[#828282] w-full text[18px] justify-around flex">
+          <li class="hover:text-[#070707]"><a href="#">Home</a></li>
+          <li class="hover:text-[#070707]"><a href="#">About me</a></li>
+          <li class="hover:text-[#070707]"><a href="#">Skills</a></li>
+          <li class="hover:text-[#070707]"><a href="#">Portfolio</a></li>
+          <li class="hover:text-[#070707]"><a href="#">Contacts</a></li>
+        </ul>
+      </nav>
+      <hr class="h-px my-8 bg-slate-500 border-0 dark:bg-gray-700" />
     </header>
 
     <!-- Main  -->
     <main class="main">
-      <div class="main container"></div>
+      <section class="hero container">
+        <div class="container flex justify-between items-end">
+          <h2 class="text-[#070707] text-5xl font-bold leading-[58px]">
+            Denis <br />
+            Novik
+          </h2>
+          <h4>
+            UX | UI designer <br />
+            24 years old, Minsk
+          </h4>
+          <h4 class="origin-bottom -rotate-90">
+            <span class="text-black cursor-pointer">RU</span>
+            |
+            <span
+              class="text-[#828282] hover:text-black transition cursor-pointer"
+              >ENG</span
+            >
+          </h4>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
