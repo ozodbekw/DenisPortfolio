@@ -14,17 +14,19 @@
       <nav class="nav mb-8">
         <ul class="text-[#828282] w-full text[18px] justify-around flex">
           <li class="text-[#070707] hover:text-[#070707] font-bold">
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li class="font-bold hover:text-[#070707]">
-            <a href="#">About me</a>
-          </li>
-          <li class="hover:text-[#070707] font-bold"><a href="#">Skills</a></li>
-          <li class="hover:text-[#070707] font-bold">
-            <a href="#">Portfolio</a>
+            <a href="#about">About me</a>
           </li>
           <li class="hover:text-[#070707] font-bold">
-            <a href="#">Contacts</a>
+            <a href="#skills">Skills</a>
+          </li>
+          <li class="hover:text-[#070707] font-bold">
+            <a href="#Portfolio">Portfolio</a>
+          </li>
+          <li class="hover:text-[#070707] font-bold">
+            <a href="#contact">Contacts</a>
           </li>
         </ul>
       </nav>
@@ -33,7 +35,7 @@
 
     <!-- Main  -->
     <main class="main">
-      <section class="hero container">
+      <section id="home" class="container">
         <div class="container flex justify-between items-end">
           <h2 class="text-[#070707] text-5xl font-bold leading-[58px]">
             Denis <br />
@@ -43,30 +45,38 @@
             UX | UI designer <br />
             24 years old, Minsk
           </h4>
-          <h4 class="align-text-bottom font-bold">
-            <span class="text-black cursor-pointer">RU</span>
-            |
-            <span
-              class="text-[#828282] hover:text-black transition cursor-pointer"
-              >ENG</span
-            >
-          </h4>
+          <div class="relative flex items-center justify-center">
+            <div class="absolute flex flex-col items-center space-y-2">
+              <button
+                class="text-black hover:text-black font-bold transform -rotate-90"
+              >
+                ENG
+              </button>
+
+              <button class="text-gray-500 font-bold transform -rotate-90">
+                RU
+              </button>
+            </div>
+          </div>
         </div>
         <img
           class="mt-16 mb-[104px]"
-          src="./images/hero-image.png"
+          src="./images/png/hero-image.png"
           alt="Hero person"
         />
       </section>
       <!-- About section -->
-      <section class="about text-center bg-[#F6F6F6] pb-[107px] pt-[120px]">
+      <section
+        id="about"
+        class="about text-center bg-[#F6F6F6] pb-[107px] pt-[120px]"
+      >
         <div class="text-center container">
           <h2
-            class="text-5xl text-bold font-bold text-[#070707] mb-4 leading-[ 42.09px]"
+            class="text-4xl text-bold font-bold text-[#070707] mb-4 leading-[ 42.09px]"
           >
             About me
           </h2>
-          <p>
+          <p class="text-lg">
             Hi, I'm Denis – UX/UI designer from Minsk. <br />
             I'm interested in design and everything connected with it. <br />
             <br />
@@ -78,11 +88,135 @@
           </p>
         </div>
       </section>
+      <!-- Skills -->
+      <section id="skills" class="container text-center pb-[111px]">
+        <h2
+          class="text-4xl mt-[91px] mb-[69.1px] text-bold font-bold text-[#070707] leading-[ 42.09px]"
+        >
+          Skills
+        </h2>
+        <p>I work in such programs as</p>
+        <div class="logos flex w- h-full justify-between mt-[83.9px]">
+          <div class="flex flex-col justify-center items-center text-center">
+            <img
+              class="w-[89.7px]"
+              src="./images/svg/PS.svg"
+              alt="Program icon"
+            />
+            <h4 class="text-[#828282] mt-6 leading-[17.33px]">
+              Adobe <br />
+              Photoshop
+            </h4>
+            <img class="mt-10" src="./images/svg/stars-4.svg" alt="" />
+          </div>
+          <div class="flex flex-col justify-center items-center text-center">
+            <img
+              class="w-[89.7px]"
+              src="./images/svg/AI.svg"
+              alt="Program icon"
+            />
+            <h4 class="text-[#828282] mt-6 leading-[17.33px]">
+              Adobe <br />
+              Illustrator
+            </h4>
+            <img class="mt-10" src="./images/svg/stars-3.svg" alt="" />
+          </div>
+          <div class="flex flex-col justify-center items-center text-center">
+            <img
+              class="w-[89.7px]"
+              src="./images/svg/AE.svg"
+              alt="Program icon"
+            />
+            <h4 class="text-[#828282] mt-6 leading-[17.33px]">
+              Adobe <br />
+              After Effects
+            </h4>
+            <img class="mt-10" src="./images/svg/stars-4.svg" alt="" />
+          </div>
+          <div class="flex flex-col justify-center items-center text-center">
+            <img
+              class="w-[89.7px] h-[88px]"
+              src="./images/svg/Figma.svg"
+              alt="Program icon"
+            />
+            <h4 class="text-[#828282] mt-6 mb-4 leading-[17.33px]">Figma</h4>
+            <img class="mt-10" src="./images/svg/stars-4.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio -->
+      <section id="Portfolio" class="bg-[#F6F6F6] pt-[112px] pb-[96px] h-full">
+        <div class="container text-center">
+          <h2
+            class="text-4xl mb-[47px] font-bold text-[#070707] leading-[ 42.09px]"
+          >
+            Portfolio
+          </h2>
+          <img
+            class="mb-[44.88px]"
+            src="./images/png/new-collection.png"
+            alt="New Collection, man and woman compaign"
+          />
+          <a class="underline mb-[99.09px]" href="#"
+            >Online fashion store - Homepage</a
+          >
+          <img
+            class="mt-[99.08px] mb-[44.89px]"
+            src="./images/png/reebok_web.png"
+            alt="rebook Jumping bro!"
+          />
+          <a class="underline" href="#">Reebok Store - Concept</a>
+          <img
+            class="mt-[99.08px] mb-[45.9px]"
+            src="./images/png/braun.png"
+            alt="Braun portable macro T52"
+          />
+          <a class="underline" href="#">Braun Landing Page - Concept</a>
+        </div>
+      </section>
+      <!-- Contacts -->
+      <section id="contact" class="container text-center pt-[114px]">
+        <h2
+          class="text-4xl mb-[20.3px] font-bold text-[#070707] leading-[ 42.09px]"
+        >
+          Contacts
+        </h2>
+        <p class="mb-[29.6px]">
+          Want to know more or just chat? <br />You are welcome!
+        </p>
+        <a class="bg-[#070707] rounded text-white py-3 px-[29.09px]">
+          Send message
+        </a>
+      </section>
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-      <div class="footer container"></div>
+    <footer class="text-center w-full mt-[85.78px] pb-[123.19px]">
+      <div class="flex justify-between items-center mx-auto w-[342.18px]">
+        <img
+          src="images/svg/linkedin.svg"
+          alt="linkedin icon"
+          class="cursor-pointer w-8 h-8"
+        />
+        <img
+          src="images/svg/instagram.svg"
+          alt="instagram icon"
+          class="cursor-pointer w-8 h-8"
+        />
+        <img
+          src="images/svg/behance.svg"
+          alt="behance icon"
+          class="cursor-pointer w-8 h-8"
+        />
+        <img
+          src="images/svg/dribble.svg"
+          alt="dribble icon"
+          class="cursor-pointer w-8 h-8"
+        />
+      </div>
+      <p class="text-[#828282] mt-[45.06px]">
+        Like me on <br />LinkedIn, Instagram, Behance, Dribble
+      </p>
     </footer>
   </body>
 </html>
