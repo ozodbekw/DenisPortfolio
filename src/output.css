@@ -686,6 +686,10 @@ video {
   margin-bottom: 99.09px;
 }
 
+.mr-\[30px\] {
+  margin-right: 30px;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -706,6 +710,10 @@ video {
   margin-top: 67px;
 }
 
+.mt-\[68px\] {
+  margin-top: 68px;
+}
+
 .mt-\[83\.9px\] {
   margin-top: 83.9px;
 }
@@ -722,14 +730,6 @@ video {
   margin-top: 99.08px;
 }
 
-.mt-\[68px\] {
-  margin-top: 68px;
-}
-
-.mr-\[30px\] {
-  margin-right: 30px;
-}
-
 .block {
   display: block;
 }
@@ -740,6 +740,14 @@ video {
 
 .hidden {
   display: none;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-6 {
+  height: 1.5rem;
 }
 
 .h-8 {
@@ -758,20 +766,20 @@ video {
   height: 100%;
 }
 
-.h-px {
-  height: 1px;
-}
-
 .h-screen {
   height: 100vh;
 }
 
-.h-6 {
-  height: 1.5rem;
+.h-px {
+  height: 1px;
 }
 
 .w-4\/5 {
   width: 80%;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-8 {
@@ -792,14 +800,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-2 {
-  width: 0.5rem;
-}
-
-.w-6 {
-  width: 1.5rem;
 }
 
 .-rotate-90 {
@@ -847,10 +847,6 @@ video {
   gap: 81.72px;
 }
 
-.gap-\[34px\] {
-  gap: 34px;
-}
-
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -859,10 +855,6 @@ video {
 
 .rounded {
   border-radius: 0.25rem;
-}
-
-.border-0 {
-  border-width: 0px;
 }
 
 .bg-\[\#070707\] {
@@ -885,6 +877,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#828282\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(130 130 130 / var(--tw-bg-opacity, 1));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -895,6 +892,11 @@ video {
      object-position: 50% 43%;
 }
 
+.px-\[26px\] {
+  padding-left: 26px;
+  padding-right: 26px;
+}
+
 .px-\[29\.09px\] {
   padding-left: 29.09px;
   padding-right: 29.09px;
@@ -903,16 +905,6 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.px-\[66px\] {
-  padding-left: 66px;
-  padding-right: 66px;
-}
-
-.px-\[26px\] {
-  padding-left: 26px;
-  padding-right: 26px;
 }
 
 .py-\[26px\] {
@@ -946,10 +938,6 @@ video {
 
 .pt-\[120px\] {
   padding-top: 120px;
-}
-
-.pt-\[66px\] {
-  padding-top: 66px;
 }
 
 .text-center {
