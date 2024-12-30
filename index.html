@@ -10,8 +10,10 @@
   </head>
   <body class="font-gilroy">
     <!-- Header  -->
-    <header class="header my-8 container font-gilroy items-center">
-      <nav class="nav mb-8">
+    <header
+      class="container items-center hidden my-8 header font-gilroy sm:flex"
+    >
+      <nav class="items-center w-full mb-8 nav">
         <ul class="text-[#828282] w-full text[18px] justify-around flex">
           <li class="text-[#070707] hover:text-[#070707] font-bold">
             <a href="#home">Home</a>
@@ -30,14 +32,57 @@
           </li>
         </ul>
       </nav>
-      <hr class="h-px my-8 bg-slate-500 border-0 dark:bg-gray-700" />
+
+      <hr
+        class="hidden h-px my-8 border-0 sm:block bg-slate-500 dark:bg-gray-700"
+      />
     </header>
+    <img
+      id="burger"
+      class="block sm:hidden absolute right-[30px] top-[68px] cursor-pointer"
+      src="./images/svg/burger.svg"
+      alt="burger shape"
+    />
+    <nav
+      id="hidden-nav"
+      class="fixed justify-between hidden w-screen h-screen transition duration-1000 bg-white"
+    >
+      <ul
+        class="text-[#828282] px-[26px] py-[26px] text[18px] justify-start flex gap-[68px] flex-col"
+      >
+        <li class="text-[#070707] hover:text-[#070707] font-bold text-4xl">
+          <a href="#home">Home</a>
+        </li>
+        <li class="font-bold text-4xl hover:text-[#070707]">
+          <a href="#about">About me</a>
+        </li>
+        <li class="hover:text-[#070707] font-bold text-4xl">
+          <a href="#skills">Skills</a>
+        </li>
+        <li class="hover:text-[#070707] font-bold text-4xl">
+          <a href="#Portfolio">Portfolio</a>
+        </li>
+        <li class="hover:text-[#070707] font-bold text-4xl">
+          <a href="#contact">Contacts</a>
+        </li>
+      </ul>
+      <img
+        id="close"
+        class="w-6 h-6 mt-[68px] mr-[30px] cursor-pointer"
+        src="./images/svg/x.svg"
+        alt="close button"
+      />
+    </nav>
 
     <!-- Main  -->
     <main class="main">
       <section id="home" class="container">
-        <div class="container flex justify-between items-end">
-          <h2 class="text-[#070707] text-5xl font-bold leading-[58px]">
+        <div
+          class="container flex flex-col justify-between sm:flex-row sm:items-end"
+        >
+          <h2
+            class="text-[#070707] text-5xl font-bold mt-[67px] leading-[58px]"
+          >
             Denis <br />
             Novik
           </h2>
@@ -45,23 +90,23 @@
             UX | UI designer <br />
             24 years old, Minsk
           </h4>
-          <div class="relative flex items-center justify-center">
+          <div class="relative items-center justify-center hidden sm:flex">
             <div class="absolute flex flex-col items-center space-y-2">
               <button
-                class="text-black hover:text-black font-bold transform -rotate-90"
+                class="font-bold text-black transform -rotate-90 hover:text-black"
               >
                 ENG
               </button>
 
-              <button class="text-gray-500 font-bold transform -rotate-90">
+              <button class="font-bold text-gray-500 transform -rotate-90">
                 RU
               </button>
             </div>
           </div>
         </div>
         <img
-          class="mt-16 mb-[104px]"
-          src="./images/png/hero-image.png"
+          class="mt-16 sm:h-[387px] h-[478px] w-full max-w-5/6 object-cover object-[50%_43%] mb-[104px]"
+          src="./images/png/hero-bro.jpg"
           alt="Hero person"
         />
       </section>
@@ -70,13 +115,13 @@
         id="about"
         class="about text-center bg-[#F6F6F6] pb-[107px] pt-[120px]"
       >
-        <div class="text-center container">
+        <div class="container text-center">
           <h2
             class="text-4xl text-bold font-bold text-[#070707] mb-4 leading-[ 42.09px]"
           >
             About me
           </h2>
-          <p class="text-lg">
+          <p class="w-4/5 mx-auto text-lg">
             Hi, I'm Denis – UX/UI designer from Minsk. <br />
             I'm interested in design and everything connected with it. <br />
             <br />
@@ -91,13 +136,15 @@
       <!-- Skills -->
       <section id="skills" class="container text-center pb-[111px]">
         <h2
-          class="text-4xl mt-[91px] mb-[69.1px] text-bold font-bold text-[#070707] leading-[ 42.09px]"
+          class="text-4xl mt-[91px] sm:mb-[69.1px] mb-[50px] text-bold font-bold text-[#070707] leading-[ 42.09px]"
         >
           Skills
         </h2>
         <p>I work in such programs as</p>
-        <div class="logos flex w- h-full justify-between mt-[83.9px]">
-          <div class="flex flex-col justify-center items-center text-center">
+        <div
+          class="logos flex flex-col gap-[81.72px] sm:flex-row w- h-full justify-between mt-[83.9px]"
+        >
+          <div class="flex flex-col items-center justify-center text-center">
             <img
               class="w-[89.7px]"
               src="./images/svg/PS.svg"
@@ -109,7 +156,7 @@
             </h4>
             <img class="mt-10" src="./images/svg/stars-4.svg" alt="" />
           </div>
-          <div class="flex flex-col justify-center items-center text-center">
+          <div class="flex flex-col items-center justify-center text-center">
             <img
               class="w-[89.7px]"
               src="./images/svg/AI.svg"
@@ -121,7 +168,7 @@
             </h4>
             <img class="mt-10" src="./images/svg/stars-3.svg" alt="" />
           </div>
-          <div class="flex flex-col justify-center items-center text-center">
+          <div class="flex flex-col items-center justify-center text-center">
             <img
               class="w-[89.7px]"
               src="./images/svg/AE.svg"
@@ -133,7 +180,7 @@
             </h4>
             <img class="mt-10" src="./images/svg/stars-4.svg" alt="" />
           </div>
-          <div class="flex flex-col justify-center items-center text-center">
+          <div class="flex flex-col items-center justify-center text-center">
             <img
               class="w-[89.7px] h-[88px]"
               src="./images/svg/Figma.svg"
@@ -196,27 +243,30 @@
         <img
           src="images/svg/linkedin.svg"
           alt="linkedin icon"
-          class="cursor-pointer w-8 h-8"
+          class="w-8 h-8 cursor-pointer"
         />
         <img
           src="images/svg/instagram.svg"
           alt="instagram icon"
-          class="cursor-pointer w-8 h-8"
+          class="w-8 h-8 cursor-pointer"
         />
         <img
           src="images/svg/behance.svg"
           alt="behance icon"
-          class="cursor-pointer w-8 h-8"
+          class="w-8 h-8 cursor-pointer"
         />
         <img
           src="images/svg/dribble.svg"
           alt="dribble icon"
-          class="cursor-pointer w-8 h-8"
+          class="w-8 h-8 cursor-pointer"
         />
       </div>
       <p class="text-[#828282] mt-[45.06px]">
         Like me on <br />LinkedIn, Instagram, Behance, Dribble
       </p>
     </footer>
+
+    <!-- js -->
+    <script src="./js/main.js"></script>
   </body>
 </html>
